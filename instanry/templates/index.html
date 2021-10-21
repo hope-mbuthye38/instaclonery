@@ -1,0 +1,125 @@
+{%extends 'base.html'%}
+{%load static%}
+
+ {% block content %}
+ {{block.super}}
+ {% include 'navbar.html' %}
+
+
+<div class="row" style="margin-top: 100px;">
+    <div class="col-md-3"></div>
+    <div class="row col-md-6">
+
+        <!-- status -->
+<div>
+    <section class="mains">
+        <div class="wrapper">
+            <div class="left-col">
+                <div class="status-wrapper">
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="{% static 'instaphotos/insta1.jpeg'%}" alt=""></div>
+                        <p class="username">Dazzy Dukeheistings </p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="{% static 'instaphotos/insta2.jpeg'%}" alt=""></div>
+                        <p class="username">katoto Reny</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="{% static 'instaphotos/insta3.jpeg'%}" alt=""></div>
+                        <p class="username">paw Meow</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="{% static 'instaphotos/insta4.jpeg'%}" alt=""></div>
+                        <p class="username">Ash Ashes</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="{% static 'instaphotos/insta5.jpeg'%}" alt=""></div>
+                        <p class="username">zendeya Riri</p>
+                        
+                        <div class="status-card">
+                            <div class="profile-pic"><img src="{% static 'instaphotos/insta6.jpeg'%}" alt=""></div>
+                            <p class="username">kaliiil Mbuthye</p>
+                        </div>
+                        <div class="status-card">
+                            <div class="profile-pic"><img src="{% static 'instaphotos/insta7.jpeg'%}" alt=""></div>
+                            <p class="username">bluevry Nyagah</p>
+                        </div>
+
+        
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="{% static 'instaphotos/insta8.png'%}" alt=""></div>
+                        <p class="username">morgain Rael</p>
+                    </div>
+
+                  <div class="status-card">
+                        <div class="profile-pic"><img src="{% static 'instaphotos/insta9.jpeg'%}" alt=""></div>
+                        <p class="username">Isaac Harrison</p>
+                    </div>
+
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="{% static 'instaphotos/insta10.jpeg'%}" alt=""></div>
+                        <p class="username">Rolys Roy</p>
+                    </div>
+                    
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="{% static 'instaphotos/insta11.jpeg'%}" alt=""></div>
+                        <p class="username">Durga Dirga</p>
+                    </div>
+  
+  
+
+
+
+
+                    </div>
+                    
+            </div>
+        </div>
+    </section>
+</div>
+
+
+        {% for post in images %}
+        <section class="main">
+            <div class="wrapper">
+                <div class="left-col">
+        
+                    <div class="post">
+                        <div class="info">
+                            <div class="user">
+                                <div class="profile-pic"><img src="{{post.image_path.url}}" alt=""></div>
+                                <p class="username">{{post.user.username}}</p>
+                            </div>
+                        
+                        </div>
+                        <img src="{{post.image_path.url}}" class="post-image" alt="">
+                        <div class="post-content">
+                            <div class="reaction-wrapper">
+                                <span class="icons" style="padding-right: 25px;"> <a href=""> <i class="far fa-heart"></i></i></a></span>
+                                <span class="icons" style="padding-right: 25px;"> <a href="{%url 'new_comment'%}"> <i class="far fa-comment"></i></a> </span>
+                                <i class="far fa-paper-plane"></i>
+                            </div>
+                            <p class="likes">8likes</p>
+                            <p class="description"><span>{{post.user.username}} </span> {{post.caption}}</p>
+                            <p class="post-time">{{post.post_date}}</p>
+                        </div>
+                        <a href="{%url 'new_comment'%}"> <div class="comment-wrapper">
+                            <i class="fa fa-smile-o" style="font-size:24px; padding-left: 10px;" class="icon"><i class="fas fa-smile"></i></i>
+                            <input type="text" class="comment-box" placeholder="Add a comment">
+                            <button class="comment-btn">post</button>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% empty %}
+        <p>There are no recent posts yet</p>
+        {% endfor %}
+
+       
+    </div>
+  
+    <div class="col-md-3"></div>
+</div>
+
+{% endblock %}
