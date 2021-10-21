@@ -22,7 +22,7 @@ Follow other users and see their pictures on my timeline.
 Like a picture and leave a comment on it.
 
 # BUILD
-Clone the repositories git clone [ https://github.com/hope-mbuthye38/instaclonery.git](instaclonery)
+Clone the repositories git clone (istaclonery)[https://github.com/hope-mbuthye38/instaclonery.git]
 
 Open root directory and install requirements python -m pip install -r requirements.txt
 
