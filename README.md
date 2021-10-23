@@ -1,7 +1,7 @@
 ## TITLE
 INSTACLONERY
 
-# #Author
+## Author
 Hope Mbuthye
 
 ## Description
@@ -33,7 +33,7 @@ Run the application python3.8 manage.py runserver
 
 Run tests on the application python3.8 manage.py tests
 
- # #Setup instructions
+ # Setup instructions
 
  ## Requirements
 
@@ -80,7 +80,7 @@ python manage.py migrate
 To run the application on your development machine,
 
 python manage.py runserver
- # Technologies Used
+ ## Technologies Used
 1. Django
 2. Python
 3. Html
