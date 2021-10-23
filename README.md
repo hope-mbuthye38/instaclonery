@@ -64,7 +64,7 @@ You'll need to create a new postgress database, Type the following command to ac
  $ psql
 Then run the following query to create a new database named insta
 
-# create database instanry
+## create database instanry
 4.Install dependencies
 To install the requirements from requirements.txt file,
 
@@ -90,16 +90,16 @@ Django-Admin
 # Bugs
 Displaying posts and some functionality of likes and follow
 
-# License
+## License
 
 
 MIT license © 2021 Hope Mbuthye
 
-# Collaboration Information
+## Collaboration Information
 1. Clone the repository
 2. Make changes and write tests
 3. Push changes to github
 
- # #Contacts
+ ## Contacts
 Tel no 0785493051
 email hope.mbuthye39@gmail.com
