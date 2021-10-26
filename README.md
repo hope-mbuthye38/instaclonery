@@ -22,7 +22,7 @@ Follow other users and see their pictures on my timeline.
 Like a picture and leave a comment on it.
 
 # BUILD
-Clone the repositories git clone:(instanry)[https://github.com/hope-mbuthye38/instaclonery.git]
+Clone the repositories git clone:[instanry](https://github.com/hope-mbuthye38/instaclonery.git)
 
 Open root directory and install requirements python -m pip install -r requirements.txt
 
@@ -41,42 +41,42 @@ Run tests on the application python3.8 manage.py tests
 
 2. Create a virtual environment
 
- 1. Install a virtual environment
+3. Install a virtual environment
 
-2. python3.8 -m venv Virtual
+4. python3.8 -m venv Virtual
 To activate the virtual environment we just created, run
 
 source virtual/bin/activate
 
-3. pip install django==2.2
+5. pip install django==2.2
 
-1. Create django project
+6. Create django project
 
 django-admin startproject instapp .
 
-2. create django app 
+7. create django app 
 
 django-admin startapp instanry
 
-3. Create a database
+8. Create a database
 You'll need to create a new postgress database, Type the following command to access postgress
 
  $ psql
 Then run the following query to create a new database named insta
 
 ## create database instanry
-4.Install dependencies
+9. Install dependencies
 To install the requirements from requirements.txt file,
 
 pip install -r requirements.txt
-5.Create Database migrations
+10. Create Database migrations
 Making migrations on postgres using django
 
 python manage.py makemigrations gallery
 then run the command below;
 
 python manage.py migrate
-6.Run the app
+11. Run the app
 To run the application on your development machine,
 
 python manage.py runserver
